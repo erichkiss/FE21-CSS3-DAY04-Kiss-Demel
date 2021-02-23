@@ -120,6 +120,8 @@ div.itemTitle {
 
 a {
     cursor: pointer;
+    text-decoration: none;
+    color:black
 }
 
 aside ul li {
@@ -130,7 +132,9 @@ aside ul li:first-of-type {
     font-weight: bold;
 }
 
-
+.smallScreenHidden {
+    display: none;
+}
 
 
 /* ==========
@@ -148,7 +152,10 @@ aside ul li:first-of-type {
     main aside {
       
         width: 30%;
-       
+    }
+
+    .smallScreenHidden {
+        display: inherit;
     }
     
 }
@@ -164,6 +171,10 @@ aside ul li:first-of-type {
         
         width: 30%;
        
+    }
+
+    .smallScreenHidden {
+        display: inherit;
     }
 
 }

@@ -67,46 +67,81 @@ nav.headerSecondLine {
  ========== */
 
 main {
-     background-color: lightgrey;
-     width: 100%;
+    width: 100%;
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
      justify-content: flex-start;
 }
 
-.heroImage img {
-    width: 100%;
-}
-    
+   
 main aside {
+    /* border-right: lightgrey 1px solid; */
     width: 30%;
+    font-size: 1em;
 }
+
 
 div.contentWrapper {
     width: 70%;
     margin: 0 auto; /* to center content */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
+div.searchItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 3vw 0;
+    border-bottom: 1px solid lightgray;
+}
+
+div.searchItem > img {
+    max-width: 40%;
+    /* max-height: 200px; */
+    padding: 3vw;
+}
+
+div.searchItemContent * {
+    padding-lef: 3vw;
+}
+
+div.itemTitle {
+    padding-top: 3vw;
+    font-weight: bold;
+}
+
+.itemTitle a {
+    color: black;
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+}
 
 
 
 
 /* ==========
     MEDIA QUERIES
- ========== */
+========== */
 
 /* media screen and (max-width: 480px) - see specifications above */
 
- @media screen and (min-width: 481px) and (max-width: 1200px) {
+@media screen and (min-width: 481px) and (max-width: 1200px) {
     
+    main {
+        flex-direction: row;
+    }
     
 }
 
 
 @media screen and (min-width:1201px) {
     
-    
+    main {
+        flex-direction: row;
+    }
 
 }
